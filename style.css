@@ -22,13 +22,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body, html {
     display: grid;
     height: 100%;
     width: 100%;
-    font-size: 16px;
     justify-content: center;
     background-color: var(--Cream);
     align-content: center;
@@ -39,17 +39,103 @@ main {
     display: grid;
     justify-content: center;
     width: 21.37em;
-    height: 611px;
-    overflow: hidden;
+    height: 38.1875em;
+    /* overflow: hidden; */
     background-color: var(--White);
+    text-align: left;
+    align-items: start;
+    justify-items: center;
     border-radius: 10px;
 }
 
-img {
-    height: 15em;
-    width: 21.37em;
+.content {
+    display: grid;
+    width: 18.4375em;
+    height: 100%;
 }
 
-h1, h2 {
-    font-size: 1.5em;
+.container-img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.image-container img {
+    border-radius: 10px 10px 0px 0;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: var(--fontMonserrat);
+    font-weight: 400;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--Darkgrayishblue);
+}
+
+.div-h1 {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+h2 {
+    font-family: var(--fontFraunces);
+    font-size: 2em;
+    /* padding-left: 0.8em; */
+    padding-bottom: 10px;
+    color: var(--Verydarkblue);
+}
+
+main p {
+    font-family: var(--fontMonserrat);
+    font-size: .89em;
+    color: var(--Darkgrayishblue);
+    /* padding-left: 1.6em; */
+    text-align: left;
+    width: 295px;
+    padding-bottom: 1em;
+}
+
+.container-price p {
+    display: flex;
+    font-family: var(--fontFraunces);
+    font-size: 2em;
+    font-weight: 700;
+    align-items: center;
+    gap: .6em;
+}
+
+.price {
+    color: var(--Darkcyan);
+}
+
+span {
+    color: var(--Darkgrayishblue);
+    text-decoration: line-through;
+    /* line-height: 1; */
+    font-family: var(--fontMonserrat);
+    font-weight: normal;
+    font-size: .4em;
+}
+
+button {
+    display: flex;
+    width: 295px;
+    height: 48px;
+    background-color: var(--Darkcyan);
+    border-radius: 10px;
+    border: 0px solid white;
+    color: var(--White);
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-cart {
+    padding-right: 10px;
 }
